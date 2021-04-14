@@ -1,4 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import TheLogo from './components/TheLogo.vue'
+import DropDown from './components/DropDown.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.component('the-logo', TheLogo)
+app.component('drop-down', DropDown)
+
+
+app.mount('#app');
+
